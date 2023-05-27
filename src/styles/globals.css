@@ -93,6 +93,20 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
+    font-family: "Plus Jakarta Display";
+    color: #1A202C;
+    /* background-repeat-x: ; */
+    /* background-repeat-y: ; */
+    /* background-attachment: ; */
+    /* background-origin: ; */
+    /* background-clip: ; */
+    /* background-color: ; */
+    transition-property: background-color;
+    transition-duration: 200ms;
+    line-height: 1.5;
+    background-image: url(../images/background-body-admin.9a5703c1.png);
+    background-size: cover;
+    background-position: center center;
 }
 
 a {
