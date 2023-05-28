@@ -1,17 +1,16 @@
 import React from "react";
+import styles from '@/styles/component/progressbar.module.css';
 
 const PrograssBar = () => {
   return (
-    <div>
-      <div className="css-hxzfxw">
+      <div className={styles.css_hxzfxw}>
         <div
-          className="circle-progress-wrap "
-          style="height: 200px; width: 200px; position: relative;"
+          className={styles.circle_progress_wrap}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="100 100 200 200"
-            style="transform: rotate(-90deg); overflow: visible;"
+            style={{transform: "rotate(-90deg)", overflow: "visible"}}
           >
             <linearGradient
               id="grd_yr9kq6mayc58"
@@ -21,15 +20,15 @@ const PrograssBar = () => {
               y2="100%"
               gradientTransform="rotate(90, .5, .5)"
             >
-              <stop offset="0" stop-color="rgba(5, 205, 153, 0)"></stop>
-              <stop offset="100" stop-color="#05CD99"></stop>
+              <stop offset="0" stopColor="rgba(5, 205, 153, 0)"></stop>
+              <stop offset="100" stopColor="#05CD99"></stop>
             </linearGradient>
-            <circle
+             <circle
               cx="200"
               cy="200"
               r="92.5"
               stroke="#060B28"
-              stroke-width="15"
+              strokeWidth="15"
               fill="#060B28"
             ></circle>
             <circle
@@ -37,24 +36,35 @@ const PrograssBar = () => {
               cy="200"
               r="92.5"
               fill="none"
-              stroke-width="15"
-              stroke-dasharray="581.1946409141117"
-              stroke-dashoffset="174.3583922742335"
-              stroke-linecap="round"
+              strokeWidth="15"
+              strokeDasharray="581.1946409141117"
+              strokeDashoffset="174.3583922742335"
+              strokeLinecap="round"
               stroke="url(#grd_yr9kq6mayc58)"
-              style="transition: stroke-dashoffset 400ms ease 0s;"
+              style={{transition: "stroke-dashoffset 400ms ease 0s"}}
             ></circle>
           </svg>
           <div
-            className="circle-progress-inner"
-            style="position: absolute; inset: 0px; display: flex; align-items: center; justify-content: center;"
+            className={styles.circle_progress_inner}
           >
             <div>
-              <div className="css-u6v8er">
+              <div className={styles.css_u6v8er}
+            >
                 <svg
                   viewBox="0 0 14 24"
                   focusable="false"
-                  className="chakra-icon css-1htje7g"
+                  // multiple css module not working ?
+                  // className={[styles.chakra_icon, styles.css_1htje7g]}
+                  style={{
+                    width: "14px",
+                    height: "22px",
+                    display: "inline-block",
+                    lineHeight: "1em",
+                    flexShrink: "0",
+                    color: "currentcolor",
+                    verticalAlign: "middle",
+                    marginBottom: "8px",
+                }}
                 >
                   <svg
                     width="14"
@@ -69,18 +79,19 @@ const PrograssBar = () => {
                     ></path>
                   </svg>
                 </svg>
-                <p className="chakra-text css-1xfsbov">68%</p>
-                <p className="chakra-text css-m4w0oi">Current load</p>
+                <p className={[styles.css_1xfsbov]}
+                 >68%</p>
+                <p className={[styles.css_m4w0oi]}
+                >Current load</p>
               </div>
             </div>
           </div>
         </div>
-        <div className="css-1yfpgry">
-          <p className="chakra-text css-k4urfs">0h 58 min</p>
-          <p className="chakra-text css-jhncyh">Time to full charge</p>
+        <div className={styles.css_1yfpgry}>
+          <p className={[styles.css_k4urfs]}>0h 58 min</p>
+          <p className={[styles.css_jhncyh]}>Time to full charge</p>
         </div>
       </div>
-    </div>
   );
 };
 

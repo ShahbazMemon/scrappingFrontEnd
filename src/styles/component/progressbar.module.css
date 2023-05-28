@@ -1,0 +1,89 @@
+.css_hxzfxw {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.circle_progress_wrap{
+    height: 200px;
+    width: 200px;
+    position: relative
+}
+
+.circle_progress_inner{
+    position: absolute;
+    inset: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.css_u6v8er {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.css_1htje7g {
+    width: 14px;
+    height: 22px;
+    display: inline-block;
+    line-height: 1em;
+    flex-shrink: 0;
+    color: currentcolor;
+    vertical-align: middle;
+    margin-bottom: 8px;
+}
+
+.css_1xfsbov {
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.css_m4w0oi {
+    color: #A0AEC0;
+    font-size: 0.875rem;
+}
+
+.css_1yfpgry {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.css_k4urfs {
+    color: rgb(255, 255, 255);
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.css_jhncyh {
+    color: #718096;
+    font-size: 0.875rem;
+}
+
+
+
+
+@media screen and (min-width: 768px){
+.css_hxzfxw {
+    margin-inline-end: 16px;
+    margin-bottom: 0px;
+}
+}
+
+@media screen and (min-width: 320px){
+.css_hxzfxw {
+    margin-bottom: 12px;
+}
+}
+
